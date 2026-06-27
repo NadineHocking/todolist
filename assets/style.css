@@ -1,0 +1,39 @@
+ /* Global */
+
+:root {
+    --primary-bg: #313131;
+    --card-bg: #434343;
+    --text-color: #ffffff;
+    --secondary-text-color: #71c5d8;
+    --accent-color1: #5cacfc; 
+    --accent-color2: #164bb6;
+}
+
+body {
+    background: var(--primary-bg) no-repeat center center fixed;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fonts */
+
+* {
+    font-family: "DM Sans", sans-serif;
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2.8rem;
+    font-weight: 500;
+    line-height: 3rem;
+    color: var(--text-color);
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: var(--text-color);
+}
