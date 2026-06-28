@@ -1,12 +1,16 @@
  /* Global */
 
 :root {
-    --primary-bg: #313131;
+    /* --primary-bg: #1b1c1f; */
+    --primary-bg:#093389;
+    --secondary-bg: #ffffff;
     --card-bg: #434343;
     --text-color: #ffffff;
-    --secondary-text-color: #71c5d8;
+    --secondary-text-color: #121212;
+    --tertiary-text-color:#093389;
     --accent-color1: #5cacfc; 
     --accent-color2: #164bb6;
+    
 }
 
 body {
@@ -25,15 +29,104 @@ body {
 }
 
 h1 {
+    font-family: "Rock Salt", cursive;
+    font-style: normal;
     font-size: 2.8rem;
-    font-weight: 500;
+    text-align: center;
+    font-weight: 600;
     line-height: 3rem;
     color: var(--text-color);
 }
 
-h3 {
+h2 {
+    font-family: "DM Sans", sans-serif;
+    font-style: normal;
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 1.5rem;
+    color: var(--tertiary-text-color);
+    text-align: center;
+}
+
+
+/* Containers */
+
+.container {
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+        .container {
+        margin: 0 auto;
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+.paper {
+  background: #fff;
+  box-shadow:
+    /* The top layer shadow */
+    0 -1px 1px rgba(0,0,0,0.15),
+    /* The second layer */
+    0 -10px 0 -5px #eee,
+    /* The second layer shadow */
+    0 -10px 1px -4px rgba(0,0,0,0.15),
+     /* The third layer */
+    0 -20px 0 -10px #eee,
+    /* The third layer shadow */
+    0 -20px 1px -9px rgba(0,0,0,0.15);
+    /* Padding for demo purposes */
+    padding: 50px;
+}
+
+
+/* Alignment */
+.d-flex {
+    display: flex;
+}
+ .center {
+    align-items: center;
+    justify-content: center;
+ }
+
+.btn {
+  background: var( --accent-color2);
     color: var(--text-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Spacing */
+
+.mb-1 {
+    margin-bottom: 1rem;
+} 
+
+.mb-2 {
+    margin-bottom: 2rem;
+} 
+
+/* footer */
+
+footer {
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    vertical-align: middle;
+    bottom: 0;
+    padding: 10px;
+}
+
+.footer-text {
+    color: var(--text-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
 }

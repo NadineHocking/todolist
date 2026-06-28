@@ -5,27 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My To-Do-List</title>
     <link rel="stylesheet" href="assets/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Rock+Salt&display=swap" rel="stylesheet">
 
 </head>
 <body  class="primary-bg">
-    <main class="container">
-        <h1>My To-Do-List</h1>
-        <input id="task" placeholder="New task">
+    <main class="container d-flex center">
+        <section class="">
+            <h1 class="mb-2">To-Do List</h1>
+            <div class="paper">
+                <h2 class="mb-1">My new to-do list:</h2>
+                <label for="task" class="lable-text">New task:</label>
+                <input class="input-field" id="task" placeholder="New task">
 
-        <button onclick="addTask()">Add</button>
+                <button class="btn" onclick="addTask()"><span class="material-icons">add</span>Add</button>
 
-        <ul id="list"></ul>
+                <ul id="list"></ul>
 
-        <button onclick="clearAll()">Clear All</button>
-        
+                <button class="btn" onclick="clearAll()">Clear All</button>
+            </div>
+
+        </section>
     </main>
 
-    <footer class="d-flex m-t-5 primary-bg">
+    <footer class="d-flex m-t-5 secondary-bg">
         <section class="footer-strip">
-			<p class="footer-text">&copy; 2026 My To-Do-List 2026</p>
+			<p class="footer-text">&copy; 2026 To-Do List 2026</p>
 		</section>
     </footer>
     <script src="assets/main.js"></script>
