@@ -28,7 +28,7 @@ body {
     padding: 0;
 }
 
-h1 {
+/* h1 {
     font-family: "Rock Salt", cursive;
     font-style: normal;
     font-size: 2.8rem;
@@ -36,13 +36,13 @@ h1 {
     font-weight: 600;
     line-height: 3rem;
     color: var(--text-color);
-}
+} */
 
-h2 {
+h1 {
     font-family: "DM Sans", sans-serif;
     font-style: normal;
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.8rem;
+    font-weight: 700;
     line-height: 1.5rem;
     color: var(--tertiary-text-color);
     text-align: center;
@@ -56,10 +56,18 @@ h2 {
 
 .lable-text {
     font-size: 0.9rem;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 5px;
+    /* color: var(--tertiary-text-color); */
 }
 
+/* List */
+
+ul li {
+    margin-top: .5rem;
+    list-style: square inside;
+    margin-right: 1rem;
+}
 
 /* Containers */
 
@@ -92,7 +100,7 @@ h2 {
     /* The third layer shadow */
     0 -20px 1px -9px rgba(0,0,0,0.15);
     /* Padding for demo purposes */
-    padding: 50px;
+    padding: 40px;
 }
 
 
@@ -115,9 +123,13 @@ h2 {
     transition: background-color 0.3s ease;
 }
 
-.add-btn {
+.btn:hover, .s-btn:hover {
+    background: #05235d;
+}
+
+.s-btn {
         
-        background: var( --accent-color2);
+    background: var( --accent-color2);
     color: var(--text-color);
     border: none;
     padding: 9px 10px;
@@ -151,7 +163,7 @@ h2 {
 /* form fields */
 
 .input-field {
-    padding: .5rem;
+    padding: .8rem;
     border-radius: 10px;
     border: 2px solid var(--primary-bg);
 }

@@ -14,21 +14,22 @@
 <body  class="primary-bg">
     <main class="container d-flex center">
         <section class="">
-            <h1 class="mb-3">To-Do List</h1>
-            <div class="paper">
-                <h2 class="mb-1">My new to-do list:</h2>
+            <!-- <h1 class="mb-3">To-Do List</h1> -->
+            <div class="paper mt-2">
+                <h1 class="mb-2">My new to-do list:</h1>
                 <div class="col">
                 <label for="task" class="lable-text">New task:</label>
                 </div>
 
                 <div class="row">
-                <input class="input-field" id="task" placeholder="New task">
-                <button class="add-btn" onclick="addTask()"><span class="material-icons">add</span></button>
+                <input class="input-field" id="task">
+                <button class="s-btn" onclick="addTask()"><span class="material-icons">add</span></button>
                 </div>
 
            
-
+<div class="col">
                 <ul id="list"></ul>
+                </div>
 
                 <button class="btn mt-1" onclick="clearAll()">Clear All</button>
             </div>
