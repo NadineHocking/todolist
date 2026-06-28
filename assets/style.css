@@ -48,6 +48,18 @@ h2 {
     text-align: center;
 }
 
+.material-icons { 
+
+    font-size: 1.1rem !important;
+    vertical-align: middle;
+}
+
+.lable-text {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
 
 /* Containers */
 
@@ -103,6 +115,17 @@ h2 {
     transition: background-color 0.3s ease;
 }
 
+.add-btn {
+        
+        background: var( --accent-color2);
+    color: var(--text-color);
+    border: none;
+    padding: 9px 10px;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
 /* Spacing */
 
 .mb-1 {
@@ -112,6 +135,35 @@ h2 {
 .mb-2 {
     margin-bottom: 2rem;
 } 
+
+.mb-3{
+    margin-bottom: 3rem;
+} 
+
+.mt-1 {
+    margin-top: 1rem;
+} 
+
+.mt-2 {
+    margin-top: 2rem;
+} 
+
+/* form fields */
+
+.input-field {
+    padding: .5rem;
+    border-radius: 10px;
+    border: 2px solid var(--primary-bg);
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+.col {
+    display: flex;
+    flex-direction: row;
+}
 
 /* footer */
 
