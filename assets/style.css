@@ -28,20 +28,10 @@ body {
     padding: 0;
 }
 
-/* h1 {
-    font-family: "Rock Salt", cursive;
-    font-style: normal;
-    font-size: 2.8rem;
-    text-align: center;
-    font-weight: 600;
-    line-height: 3rem;
-    color: var(--text-color);
-} */
-
 h1 {
     font-family: "DM Sans", sans-serif;
     font-style: normal;
-    font-size: 1.8rem;
+    font-size: 2.1rem;
     font-weight: 700;
     line-height: 1.5rem;
     color: var(--tertiary-text-color);
@@ -49,16 +39,15 @@ h1 {
 }
 
 .material-icons { 
-
     font-size: 1.1rem !important;
     vertical-align: middle;
+    font-weight: 600 !important;
 }
 
 .lable-text {
     font-size: 0.9rem;
     font-weight: 700;
     margin-bottom: 5px;
-    /* color: var(--tertiary-text-color); */
 }
 
 /* List */
@@ -87,8 +76,8 @@ ul li {
 }
 
 .paper {
-  background: #fff;
-  box-shadow:
+    background: var( --secondary-bg);
+    box-shadow:
     /* The top layer shadow */
     0 -1px 1px rgba(0,0,0,0.15),
     /* The second layer */
@@ -114,7 +103,7 @@ ul li {
  }
 
 .btn {
-  background: var( --accent-color2);
+    background: var( --accent-color2);
     color: var(--text-color);
     border: none;
     padding: 10px 20px;
@@ -123,20 +112,46 @@ ul li {
     transition: background-color 0.3s ease;
 }
 
-.btn:hover, .s-btn:hover {
+.btn:hover {
     background: #05235d;
 }
 
 .s-btn {
-        
-    background: var( --accent-color2);
-    color: var(--text-color);
-    border: none;
-    padding: 9px 10px;
+    margin-left: .5rem;
+    font-weight: 700;
+    background: var( --accent-color2);;
+    color: var( --secondary-bg);
+    border: 2px solid var( --accent-color2);;
+    padding: .3rem;
     border-radius: 3rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
+.s-btn:hover {
+    background: var(--primary-bg);
+    border: 2px solid var(--primary-bg);
+    color: var( --secondary-bg);
+}
+
+
+.i-btn {
+    font-weight: 700;
+    background: none;
+    color: #093389;
+    border: 2px solid transparent;
+    padding: .1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 3rem;
+}
+
+
+.i-btn:hover {
+    background: var(--primary-bg);
+    color: var( --secondary-bg);
+}
+
 
 /* Spacing */
 

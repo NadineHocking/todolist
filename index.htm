@@ -3,38 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My To-Do-List</title>
+    <title>To-Do-List</title>
     <link rel="stylesheet" href="assets/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Rock+Salt&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000" rel="stylesheet">
 
 </head>
 <body  class="primary-bg">
     <main class="container d-flex center">
-        <section class="">
-            <!-- <h1 class="mb-3">To-Do List</h1> -->
-            <div class="paper mt-2">
-                <h1 class="mb-2">My new to-do list:</h1>
-                <div class="col">
-                <label for="task" class="lable-text">New task:</label>
-                </div>
-
-                <div class="row">
-                <input class="input-field" id="task">
+        <div class="paper mt-2">
+            <h1 class="mb-2">To-do list:</h1>
+            <div class="row">
+                <input class="input-field" id="task" placeholder="Add New Task">
                 <button class="s-btn" onclick="addTask()"><span class="material-icons">add</span></button>
-                </div>
-
-           
-<div class="col">
-                <ul id="list"></ul>
-                </div>
-
-                <button class="btn mt-1" onclick="clearAll()">Clear All</button>
             </div>
-
-        </section>
+            <div class="col mt-1 mb-1">
+                <ul id="list"></ul>
+            </div>
+            <button class="btn mt-1" onclick="clearAll()">Clear All</button>
+        </div>      
     </main>
 
     <footer class="d-flex m-t-5 secondary-bg">
